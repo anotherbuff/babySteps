@@ -24,7 +24,13 @@ public class ArrayQueue<X> implements Queue<X>
         if(start == end)
           throw new IllegalStateException("Invalid Call : Queue's Empty");
         
-          
+        //TODO: check logic
+        
+        X temp = dataArray[end];
+        dataArray[end] = null;
+        end++;
+        return temp;
+        
         
         
       }
